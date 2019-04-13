@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>George's CSS Demonstration</title>
+        <link rel="stylesheet" type="text/css" href="anExternal.css">
+    </head>
+
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        p.dotted {border-style: dotted;}
+    </style>
+
+    <body>
+        <p class="shiftleft" style="color:aqua;font-family:verdana">I'm<br>really hungry<br>and I'm<br>craving peaches</p>
+        <p style="color:red;font-family:courier new">I'm not hungry anymore but peaches don't work on pizza</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg" 
+        style="width:50px;height:50px">
+
+        <img src="https://therecipecritic.com/wp-content/uploads/2018/08/zucchini_crust_pizza-1-of-1.jpg" 
+        style="width:50px;height:50px"><br>
+
+        <div class="container">
+            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/01/bitter-wisdom-truth-potato-fb__700-png.jpg"
+            style="margin:20px;">
+            <div class="centered">Centered Text</div>
+        </div>
+
+        <p class="dotted">Woah check out that border!</p>
+
+        <p id="roundcorners"></p>
+    </body>
+</html>
